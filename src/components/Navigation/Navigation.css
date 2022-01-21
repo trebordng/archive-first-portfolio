@@ -1,0 +1,20 @@
+.navbar{
+    font-family: 'Roboto','Montserrat';
+    background-color: #324158;
+    font-weight: bold;
+}
+a{
+    color:#DBB89A;
+}
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+a:focus{
+    color:white;
+}
+.navbar-expand .navbar-nav .nav-link{
+    padding-right:1rem;
+    padding-left:1rem;
+    font-size: 0.75rem;
+}

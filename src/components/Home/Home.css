@@ -1,0 +1,94 @@
+.home {
+    font-family: 'Roboto', 'Montserrat';
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110vh;
+    background: rgba(50, 65, 88, 0.7);
+    overflow: hidden;
+}
+
+img {
+    content: url("./portrait.jpg");
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.introduction {
+    margin-bottom: 15vh;
+}
+
+.introductionText {
+    text-align: left;
+    color: #DBB89A;
+    font-size: 10vh;
+    font-weight: bold;
+
+
+}
+
+.dot {
+    color: #324158;
+}
+
+.introductionSubText {
+    color: #DBB89A;
+    font-weight: lighter;
+    font-size: 3vh;
+}
+
+.buttonText {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.moreButton {
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #DBB89A;
+    color: #DBB89A;
+    background-color: transparent;
+    font-size: 3vh;
+    width: 15vh;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-width: thin;
+}
+
+.moreButton:hover {
+    background-color: rgba(219, 184, 154, 0.2);
+}
+
+.moreButton:focus {
+    outline: none;
+}
+
+.moreButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.moreButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.moreButton:hover span {
+    padding-right: 12px;
+}
+
+.moreButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
