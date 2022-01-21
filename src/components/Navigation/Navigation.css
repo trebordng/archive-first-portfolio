@@ -5,6 +5,7 @@
 }
 a{
     color:#DBB89A;
+    padding-right:1rem;
 }
 a:hover{
     color:white;
@@ -17,4 +18,12 @@ a:focus{
     padding-right:1rem;
     padding-left:1rem;
     font-size: 2vh;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+.navbar-toggler{
+    background-color: #DBB89A;
+    border-radius: 4px;
 }
