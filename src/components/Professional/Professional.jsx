@@ -61,6 +61,7 @@ function Professional() {
                   <div className="percentage">60%</div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

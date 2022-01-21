@@ -1,7 +1,7 @@
 .navbar{
-    font-family: 'Roboto','Montserrat';
+    font-family: 'Montserrat','Roboto';
     background-color: #324158;
-    font-weight: bold;
+    font-weight: 500;
 }
 a{
     color:#DBB89A;
