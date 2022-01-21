@@ -5,11 +5,11 @@
     align-items: center;
     justify-content: center;
     min-height: 120vh;
-    background: rgba(50, 65, 88, 0.7);
+    background: rgba(50, 65, 88, 0.8);
     overflow: hidden;
 }
 
-img {
+.home img {
     content: url("./portrait.jpg");
     max-width: 100%;
     position: absolute;

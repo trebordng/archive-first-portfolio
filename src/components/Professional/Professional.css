@@ -1,0 +1,82 @@
+.professional {
+    font-family: 'Roboto', 'Montserrat';
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(50, 65, 88, 0.8);
+    overflow: hidden;
+}
+
+.professional img {
+    content: url("./professionals.jpg");
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.professionalTitle{
+    color:#DBB89A;
+    position:absolute;
+    top:15%;
+    left:50%;
+    font-weight: bolder;
+    transform: translate(-50%, -50%);
+
+}
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #DBB89A;
+}
+
+
+.skillContainer {
+    font-weight:bolder;
+    color:#DBB89A;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top:2vh;
+    padding-bottom:2vh;
+}
+.skillText{
+    padding-right:1vh;
+}
+.skillWidth{
+    width: 60vh;
+    display:flex;
+    align-items: center;
+}
+
+.html {
+    width: 90%;
+    background-color: #DBB89A;
+}
+
+.css {
+    width: 70%;
+    background-color: #DBB89A;
+}
+
+.js {
+    width: 65%;
+    background-color: #DBB89A;
+}
+
+.react {
+    width: 60%;
+    background-color: #DBB89A;
+}
+.pts {
+    width: 50%;
+    background-color: #DBB89A;
+}
+.sql {
+    width: 60%;
+    background-color: #DBB89A;
+}
+.percentage{
+    padding-left:1vh;
+}
