@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation/Navigation";
 import Home from "./Home/Home";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Professional from "./Professional/Professional";
 
 function App() {
