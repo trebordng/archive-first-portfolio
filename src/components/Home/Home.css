@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 12vh;
+    min-height: 120vh;
     background: rgba(50, 65, 88, 0.7);
     overflow: hidden;
 }
