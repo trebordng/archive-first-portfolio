@@ -16,5 +16,5 @@ a:focus{
 .navbar-expand .navbar-nav .nav-link{
     padding-right:1rem;
     padding-left:1rem;
-    font-size: 0.75rem;
+    font-size: 2vh;
 }
