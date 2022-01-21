@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import "./Home.css";
 import Popup from "./Popup";
-var isClicked = true;
+import { fadeIn } from "react-animations";
+import Radium, { StyleRoot } from "radium";
 
+const styles = {
+  fadeIn: {
+    animation: "x 1s",
+    animationName: Radium.keyframes(fadeIn, "fadeIn"),
+  },
+};
 function Home() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
@@ -24,14 +31,16 @@ function Home() {
               <span>More</span>
             </button>
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-              <div className="popupText">
-                <h1>Robert (Nguyen) Tran </h1>
-                <p>
-                  A post-graduate IT developer with a bachelor certification in
-                  Information Technology from QUT. Skillful in HTML, CSS,
-                  JavaScript, React,managing and maintaining data server.
-                </p>
-              </div>
+              <StyleRoot>
+                <div className="popupText" style={styles.fadeIn}>
+                  <h1>Robert (Nguyen) Tran </h1>
+                  <p>
+                    A post-graduate IT developer with a bachelor certification
+                    in Information Technology from QUT. Skillful in HTML, CSS,
+                    JavaScript, React,managing and maintaining data server.
+                  </p>
+                </div>
+              </StyleRoot>
             </Popup>
           </div>
         </div>
