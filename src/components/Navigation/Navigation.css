@@ -6,6 +6,7 @@
 a{
     color:#DBB89A;
     padding-right:1rem;
+    text-decoration: none;
 }
 a:hover{
     color:white;

@@ -17,8 +17,8 @@ function Portfolios() {
     <StyleRoot>
       <div style={styles.fadeIn}>
         <div className="portfolios">
-          <img />
-          <h1 className="portfolioTitle">Portfolio</h1>
+          <img className="portfoliosImg"/>
+          <h1 className="portfoliosTitle">Portfolio</h1>
           <div className="portfolioList">
             <div className="portfolioListWrapper">
               {portfolios.map((portfolio) => (
@@ -32,6 +32,7 @@ function Portfolios() {
               ))}
             </div>
           </div>
+
           <div className="portfolio">
             <Outlet />
           </div>
