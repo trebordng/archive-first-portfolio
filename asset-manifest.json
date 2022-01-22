@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.42845c3e.css",
-    "main.js": "/portfolio/static/js/main.8881d26d.js",
+    "main.css": "/portfolio/static/css/main.745fa64c.css",
+    "main.js": "/portfolio/static/js/main.7319f094.js",
+    "static/media/tranfood1.png": "/portfolio/static/media/tranfood1.822de4ffd6ba51a33a31.png",
+    "static/media/3.png": "/portfolio/static/media/3.28be9dbaf12076b5717e.png",
+    "static/media/rethink2.png": "/portfolio/static/media/rethink2.c65cac45878ccf39f3a6.png",
+    "static/media/tranfood3.png": "/portfolio/static/media/tranfood3.fc57362f25a118fae9ef.png",
+    "static/media/1.png": "/portfolio/static/media/1.8c981c45b8982fd1fe4c.png",
+    "static/media/2.png": "/portfolio/static/media/2.ae37674bd06a4c40efe3.png",
     "static/media/portrait.jpg": "/portfolio/static/media/portrait.918e1dd6e484448fd8e2.jpg",
+    "static/media/rethink3.png": "/portfolio/static/media/rethink3.f68ac238878e84f6c894.png",
+    "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.b9444bea855a7760f22d.jpg",
     "static/media/professionals.jpg": "/portfolio/static/media/professionals.9decca57062cccc42695.jpg",
+    "static/media/rethink1.png": "/portfolio/static/media/rethink1.ae402ec7a5dadd965052.png",
+    "static/media/tranfood2.png": "/portfolio/static/media/tranfood2.d66c8fcb15f1e977a39a.png",
     "index.html": "/portfolio/index.html",
-    "main.42845c3e.css.map": "/portfolio/static/css/main.42845c3e.css.map",
-    "main.8881d26d.js.map": "/portfolio/static/js/main.8881d26d.js.map"
+    "main.745fa64c.css.map": "/portfolio/static/css/main.745fa64c.css.map",
+    "main.7319f094.js.map": "/portfolio/static/js/main.7319f094.js.map"
   },
   "entrypoints": [
-    "static/css/main.42845c3e.css",
-    "static/js/main.8881d26d.js"
+    "static/css/main.745fa64c.css",
+    "static/js/main.7319f094.js"
   ]
 }
