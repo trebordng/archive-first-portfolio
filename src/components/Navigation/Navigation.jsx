@@ -21,7 +21,7 @@ function Navigation() {
                 <Link to="/Professional">Professional</Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/Portfolio">Portfolio</Link>
+                <Link to="/Portfolios">Portfolio</Link>
               </Nav.Link>
               <Nav.Link>
                 <Link to="/Education">Education</Link>

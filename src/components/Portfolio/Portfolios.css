@@ -1,0 +1,42 @@
+.portfolios {
+    font-family: 'Montserrat', 'Roboto';
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    background: rgba(50, 65, 88, 0.8);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.portfolios img {
+    content: url("./portfolio.jpg");
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.portfolioList {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size:2vh;
+}
+
+.portfolioListWrapper p {
+    
+    text-align: left;
+}
+
+.portfolio {
+    width: 70%;
+}
+
+.portfolioTitle {
+    color: #DBB89A;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
