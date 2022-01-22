@@ -5,6 +5,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Professional from "./Professional/Professional";
 import Portfolios from "./Portfolio/Portfolios";
 import Portfolio from "./Portfolio/Portfolio";
+import Education from "./Education/Education";
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
         <Route path="Portfolios" element={<Portfolios />} >
           <Route path=":portfolioId" element={<Portfolio  />} />
         </Route>
+        <Route path="Education" element={<Education />} />
       </Routes>
     </Router>
   );

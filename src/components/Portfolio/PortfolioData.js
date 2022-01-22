@@ -38,6 +38,7 @@ let portfolios = [
     company: "Self",
     time: "January 2022 - January 2022.",
   },
+  
 ];
 
 export function getPortfolios() {

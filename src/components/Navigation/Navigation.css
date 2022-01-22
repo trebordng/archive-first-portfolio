@@ -7,6 +7,7 @@ a{
     color:#DBB89A;
     padding-right:1rem;
     text-decoration: none;
+    font-weight: bold;
 }
 a:hover{
     color:white;
@@ -28,3 +29,4 @@ a:focus{
     background-color: #DBB89A;
     border-radius: 4px;
 }
+ 

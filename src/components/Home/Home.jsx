@@ -43,7 +43,7 @@ function Home() {
                         A post-graduate IT developer with a bachelor
                         certification in Information Technology from QUT.
                         Skillful in HTML, CSS, JavaScript, React, managing and
-                        maintaining data server.
+                        maintaining data server. 
                       </p>
                     </div>
                   </StyleRoot>

@@ -4,7 +4,7 @@ import { getPortfolios } from "./PortfolioData";
 import "./Portfolios.css";
 import Radium, { StyleRoot } from "radium";
 import { fadeIn } from "react-animations";
-
+import { Row, Col } from "react-bootstrap";
 const styles = {
   fadeIn: {
     animation: "x 1s",
@@ -17,24 +17,26 @@ function Portfolios() {
     <StyleRoot>
       <div style={styles.fadeIn}>
         <div className="portfolios">
-          <img className="portfoliosImg"/>
+          <img className="portfoliosImg" />
           <h1 className="portfoliosTitle">Portfolio</h1>
-          <div className="portfolioList">
-            <div className="portfolioListWrapper">
-              {portfolios.map((portfolio) => (
-                <Link
-                  style={{ display: "block", margin: "1rem 0" }}
-                  to={`/Portfolios/${portfolio.id}`}
-                  key={portfolio.id}
-                >
-                  <div className="porfolioListText">{portfolio.name}</div>
-                </Link>
-              ))}
-            </div>
-          </div>
 
-          <div className="portfolio">
-            <Outlet />
+          <div class="container ">
+            <div class="row">
+              <div class="col-lg-2 col-sm-12">
+                {portfolios.map((portfolio) => (
+                  <Link
+                    style={{ display: "block", margin: "1rem 0" }}
+                    to={`/Portfolios/${portfolio.id}`}
+                    key={portfolio.id}
+                  >
+                    <div className="porfolioListText">{portfolio.name}</div>
+                  </Link>
+                ))}
+              </div>
+              <div class="col-lg-10 col-sm-12 portfolio">
+                <Outlet />
+              </div>
+            </div>
           </div>
         </div>
       </div>
