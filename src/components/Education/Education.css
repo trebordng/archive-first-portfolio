@@ -1,25 +1,85 @@
 .education {
-    font-family: 'Montserrat','Roboto';
+    font-family: 'Montserrat', 'Roboto';
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgba(50, 65, 88, 0.8);
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
+        url("./education.jpg");
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
-.education img {
-    content: url("./education.jpg");
-    max-width: 100%;
+
+
+.firstEducation {
+    padding-top:3%;
+    text-align: center;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.32)),
+        url('https://teanabroad.org/wp-content/uploads/2015/12/QUT-Media-3-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.secondEducation {
+    padding-top:3%;
+    text-align: center;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.32)),
+        url('https://tpnl.org/uploads/school/cover/326/medium_1738.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.finalEducation {
+    padding-top:3%;
+    text-align: center;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.32)),
+        url('./continue.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.thirdEducation {
+    padding-top:3%;
+    text-align: center;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.32)),
+        url('./continue.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.rightEducation {
+    border: 1px solid white;
+
+}
+
+.educationTitle {
+    color: #DBB89A;
     position: absolute;
-    z-index: -1;
-}
-.educationTitle{
-    color:#DBB89A;
-    position:absolute;
-    top:15%;
-    left:50%;
+    top: 15%;
+    left: 50%;
     transform: translate(-50%, -50%);
+}
 
+.rowEducation {
+    
+    width: 55%;
+    height: 50vh;
+
+}
+
+.yearStudy {
+    color: #DBB89A;
+}
+
+.schoolStudy {
+    color: white;
+}
+
+.programStudy {
+    color: #DBB89A;
 }

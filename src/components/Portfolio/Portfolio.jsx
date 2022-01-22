@@ -19,9 +19,9 @@ function Portfolio() {
     <>
       <StyleRoot>
         <div style={styles.fadeIn}>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
+          <div className="container containerStyle">
+            <div className="row">
+              <div className="col-lg-6">
                 <h2>{portfolio.name}</h2>
                 <div className="portfolioContentText">
                   <p>{portfolio.company}</p>
@@ -32,7 +32,7 @@ function Portfolio() {
                   <p>{portfolio.description}</p>
                 </div>
               </div>
-              <div class="col-lg-6 ">
+              <div className="col-lg-6 ">
                 <div className="carousel">
                   <Carousel fade>
                     <Carousel.Item>

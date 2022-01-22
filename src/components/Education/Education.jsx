@@ -14,11 +14,30 @@ function Education() {
     <StyleRoot>
       <div style={styles.fadeIn}>
         <div className="education">
-          <img />
           <h1 className="educationTitle">Education</h1>
-          <div class="row">
-            <div class="col-lg-6 col-sm-12">.col-6 .col-sm-4</div>
-            <div class="col-lg-6 col-sm-12">.col-6 .col-sm-4</div>
+          <div className="row rowEducation">
+            <div className="col-lg-4 col-sm-12 firstEducation">
+              <h3 className="yearStudy">2016-2019</h3>
+              <h3 className="schoolStudy">
+                QUT<br></br>University
+              </h3>
+              <p className="programStudy">
+                BACHERLOR OF INFORMATION TECHNOLOGY
+              </p>
+            </div>
+            <div className="col-lg-4 col-sm-12 secondEducation">
+              <h3 className="yearStudy">2020-2021</h3>
+              <h3 className="schoolStudy">
+                NAVITAS<br></br>PROFESSIONAL<br></br>YEAR
+              </h3>
+              <p className="programStudy">PROFESSIONAL YEAR PROGRAM</p>
+            </div>
+            <div className="col-lg-4 col-sm-12 finalEducation">
+              <h3 className="yearStudy">2021-TO DATE</h3>
+              <h3 className="schoolStudy">
+                TO BE<br></br>CONTINUED
+              </h3>
+            </div>
           </div>
         </div>
       </div>

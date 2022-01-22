@@ -43,7 +43,9 @@ function Home() {
                         A post-graduate IT developer with a bachelor
                         certification in Information Technology from QUT.
                         Skillful in HTML, CSS, JavaScript, React, managing and
-                        maintaining data server. 
+                        maintaining data server. To me, one of the most
+                        important components when working with website is making
+                        it responsive.
                       </p>
                     </div>
                   </StyleRoot>

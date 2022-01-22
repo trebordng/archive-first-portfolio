@@ -6,6 +6,7 @@ import Professional from "./Professional/Professional";
 import Portfolios from "./Portfolio/Portfolios";
 import Portfolio from "./Portfolio/Portfolio";
 import Education from "./Education/Education";
+import Experience from "./Experience/Experience";
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
           <Route path=":portfolioId" element={<Portfolio  />} />
         </Route>
         <Route path="Education" element={<Education />} />
+        <Route path="Experience" element={<Experience />} />
       </Routes>
     </Router>
   );

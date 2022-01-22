@@ -1,0 +1,82 @@
+.experience {
+    font-family: 'Montserrat', 'Roboto';
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
+        url("./experience.jpg");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.firstExperience {
+    padding-top:3%;
+    text-align: center;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.32)),
+        url('http://zerowastevietnam.org/wp-content/uploads/2020/07/web-final-logo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.secondExperience {
+    padding-top:3%;
+    text-align: center;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.32)),
+        url('https://www.centra.com.au/wp-content/uploads/2020/03/nbn-business-accredited-adviser.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.thirdExperience {
+    padding-top:3%;
+    text-align: center;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.32)),
+        url('https://static.wixstatic.com/media/dc0388_6232230bad244ea4b110604a6ffff5c0~mv2.jpg/v1/fill/w_640,h_855,al_c,q_85,usm_0.66_1.00_0.01/dc0388_6232230bad244ea4b110604a6ffff5c0~mv2.webp');
+    background-size: cover;
+    background-position: center;
+}
+.finalExperience {
+    padding-top:3%;
+    text-align: center;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.32)),
+        url('./continue.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.experienceTitle {
+    color: #DBB89A;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rowExperience {
+    
+    width: 55%;
+    height: 50vh;
+
+}
+
+.yearWork {
+    color: #DBB89A;
+}
+
+.companyWork {
+    color: white;
+}
+
+.whatWork {
+    color: #DBB89A;
+}

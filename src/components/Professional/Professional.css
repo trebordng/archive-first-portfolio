@@ -5,16 +5,14 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgba(50, 65, 88, 0.8);
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
+        url("./professionals.jpg");
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
-.professional img {
-    content: url("./professionals.jpg");
-    max-width: 100%;
-    position: absolute;
-    z-index: -1;
-}
 .professionalTitle{
     color:#DBB89A;
     position:absolute;

@@ -13,9 +13,9 @@
 .innerPopup {
     border-radius: 4px;
     position: relative;
-    padding: 32px;
+    padding: 40px;
     width: 100%;
-    min-height: 20vh;
+    min-height: 23vh;
     max-width: 100vh;
     background-color: rgba(50, 65, 88, 1);
 }

@@ -38,6 +38,19 @@ let portfolios = [
     company: "Self",
     time: "January 2022 - January 2022.",
   },
+  {
+    name: "Centra Company",
+    id: 4,
+    subtitle:
+      "Centra company was founded with the goal of supporting Australia's organizations to solve their IT challenges.",
+    description:
+      "During the time working at the company, I helped improve their service ticket template, referral webpage and design marketing catalogue as well as some internal-used banner.",
+    image1: require("./centra/c1.png"),
+    image2: require("./centra/c2.png"),
+    image3: require("./centra/c3.png"),
+    company: "Centra",
+    time: "November 2021 - February 2021.",
+  },
   
 ];
 

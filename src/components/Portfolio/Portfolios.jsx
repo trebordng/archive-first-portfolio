@@ -20,9 +20,9 @@ function Portfolios() {
           <img className="portfoliosImg" />
           <h1 className="portfoliosTitle">Portfolio</h1>
 
-          <div class="container ">
-            <div class="row">
-              <div class="col-lg-2 col-sm-12">
+          <div className="container ">
+            <div className="row">
+              <div className="separateLine col-lg-2 col-sm-12">
                 {portfolios.map((portfolio) => (
                   <Link
                     style={{ display: "block", margin: "1rem 0" }}
@@ -33,7 +33,7 @@ function Portfolios() {
                   </Link>
                 ))}
               </div>
-              <div class="col-lg-10 col-sm-12 portfolio">
+              <div className="col-lg-10 col-sm-12 portfolio">
                 <Outlet />
               </div>
             </div>

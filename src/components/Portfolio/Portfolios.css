@@ -3,43 +3,42 @@
     position: relative;
     display: flex;
     min-height: 100vh;
-    background: rgba(50, 65, 88, 0.8);
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
+        url("./portfolio.jpg");
     overflow: hidden;
     align-items: center;
+    background-size: cover;
+    background-position: center;
 
 }
 
-.portfoliosImg {
-    content: url("./portfolio.jpg");
-    max-width: 100%;
-    position: absolute;
-    z-index: -1;
-}
 
 
-.containerStyle{
-  position: absolute;
-   
-}
+
 .portfolio {
     color: white;
 
 }
 
 .portfoliosTitle {
-    color: #DBB89A; 
+    color: #DBB89A;
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.portfolioImage{
-    width:500px;
-    height: 300px;
+.portfolioImage {
+    width: 500px;
+    height: 600px;
     object-fit: cover;
 }
-.carousel{
-    width:500px;
 
+.carousel {
+    width: 500px;
+
+}
+.separateLine{
+    border-right:1px solid #DBB89A;
 }
