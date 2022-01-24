@@ -13,24 +13,38 @@ const styles = {
 function Blogs() {
   const [blogData, getBlogData] = useState([]);
 
-  useEffect(() => {
-    axios.get("https://61ed54c4f3011500174d23cc.mockapi.io/Post")
+  async function axiosAPI() {
+    const test = [];
+    await axios
+      .get("https://61ed54c4f3011500174d23cc.mockapi.io/Post")
       .then((response) => {
-        (response.data).map((blog) => {
-          getBlogData([...blogData, { title: blog["title"], id: blog["id"] }]);
-        });
-      })
-
-      .catch((err) => {
-        console.log(err);
+        test.push(response.data);
       });
-    console.log(blogData);
+    getBlogData(test);
+  }
+
+  useEffect(() => {
+    axiosAPI();
   }, []);
+  useEffect(() => {}, []);
 
   return (
     <StyleRoot>
       <div style={styles.fadeIn}>
-        <div className="blog"></div>
+        <div className="blog">
+          {blogData.map((blogPage) =>
+            blogPage.map((blog) => (
+              <Link to={`/Blogs/${blog.id}`} key={blog.id}>
+                <div>
+                  <p>{blog.title}</p>
+                </div>
+              </Link>
+            ))
+          )}
+          <div>
+            <Outlet />
+          </div>
+        </div>
       </div>
     </StyleRoot>
   );

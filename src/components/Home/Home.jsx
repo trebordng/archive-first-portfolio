@@ -4,6 +4,7 @@ import Popup from "./Popup";
 import Radium, { StyleRoot } from "radium";
 import { fadeIn } from "react-animations";
 import Navigation from "../Navigation/Navigation";
+
 const styles = {
   fadeIn: {
     animation: "x 1s",

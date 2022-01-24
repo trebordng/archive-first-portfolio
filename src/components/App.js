@@ -17,13 +17,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="Home" index element={<Home />} />
         <Route path="Professional" element={<Professional />} />
+
         <Route path="Portfolios" element={<Portfolios />}>
           <Route path=":portfolioId" element={<Portfolio />} />
         </Route>
         <Route path="Education" element={<Education />} />
         <Route path="Experience" element={<Experience />} />
         <Route path="Blogs" element={<Blogs />}>
-          <Route path=":blogId" element={<Blog/>}/>
+          <Route path=":blogId" element={<Blog />} />
         </Route>
       </Routes>
     </Router>
