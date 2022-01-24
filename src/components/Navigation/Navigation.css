@@ -3,11 +3,10 @@
     background-color: #324158;
     font-weight: 500;
 }
-a{
+.navbar a{
     color:#DBB89A;
     padding-right:1rem;
     text-decoration: none;
-    font-weight: bold;
 }
 a:hover{
     color:white;

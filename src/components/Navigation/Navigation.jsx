@@ -33,7 +33,7 @@ function Navigation() {
                 <Link to="/Contact">Contact</Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/Blog">Blog</Link>
+                <Link to="/Blogs">Blog</Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -7,9 +7,10 @@ import Portfolios from "./Portfolio/Portfolios";
 import Portfolio from "./Portfolio/Portfolio";
 import Education from "./Education/Education";
 import Experience from "./Experience/Experience";
+import Blogs from "./Blog/Blogs";
+import Blog from "./Blog/Blog";
 
 function App() {
-  
   return (
     <Router>
       <Navigation />
@@ -17,11 +18,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="Home" index element={<Home />} />
         <Route path="Professional" element={<Professional />} />
-        <Route path="Portfolios" element={<Portfolios />} >
-          <Route path=":portfolioId" element={<Portfolio  />} />
+        <Route path="Portfolios" element={<Portfolios />}>
+          <Route path=":portfolioId" element={<Portfolio />} />
         </Route>
         <Route path="Education" element={<Education />} />
         <Route path="Experience" element={<Experience />} />
+        <Route path="Blogs" element={<Blogs />}>
+          <Route path=":blogId" element={<Blog/>}/>
+        </Route>
       </Routes>
     </Router>
   );

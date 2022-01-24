@@ -8,7 +8,7 @@
     background-image:
         linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
         url('./portrait.jpg');
-    overflow: hidden;
+    overflow: visible;
     background-size: cover;
     background-position: center;
 }

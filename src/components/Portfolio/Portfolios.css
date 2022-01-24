@@ -39,6 +39,26 @@
     width: 500px;
 
 }
-.separateLine{
-    border-right:1px solid #DBB89A;
+
+.portfolioListText p{
+    display:inline-block;
+    color: #DBB89A ;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+.portfolioListText p:hover{
+   
+    color: white ;
+    
+}
+.portfolioListText p:focus{
+   
+    color: white ;
+    
+}
+.separateLine {
+
+
+
+    border-right: 1px solid #DBB89A;
 }
