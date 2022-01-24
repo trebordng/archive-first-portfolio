@@ -1,26 +1,22 @@
 .portfolios {
     font-family: 'Montserrat', 'Roboto';
     position: relative;
-    display: flex;
     min-height: 100vh;
     background-image:
         linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
         url("./portfolio.jpg");
     overflow: hidden;
-    align-items: center;
     background-size: cover;
     background-position: center;
-
 }
-
-
-
-
 .portfolio {
     color: white;
 
 }
-
+.portfolioWrapper{
+    display: flex;
+    padding: 10vw 2vw;
+}
 .portfoliosTitle {
     color: #DBB89A;
     position: absolute;
@@ -30,16 +26,10 @@
 }
 
 .portfolioImage {
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    height: 600px;
     object-fit: cover;
 }
-
-.carousel {
-    width: 500px;
-
-}
-
 .portfolioListText p{
     display:inline-block;
     color: #DBB89A ;

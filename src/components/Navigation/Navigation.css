@@ -1,7 +1,7 @@
 .navbar{
     font-family: 'Montserrat','Roboto';
-    background-color: #324158;
     font-weight: 500;
+    padding-top:2%;
 }
 .navbar a{
     color:#DBB89A;
@@ -25,7 +25,8 @@ a:focus{
     flex-grow: 0;
 }
 .navbar-toggler{
-    background-color: #DBB89A;
-    border-radius: 4px;
+    
+    border-radius: 8px;
+    border-color: #DBB89A;
 }
  

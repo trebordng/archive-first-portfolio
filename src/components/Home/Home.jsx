@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import Popup from "./Popup";
 import Radium, { StyleRoot } from "radium";
 import { fadeIn } from "react-animations";
+import Navigation from "../Navigation/Navigation";
 const styles = {
   fadeIn: {
     animation: "x 1s",
@@ -16,7 +17,7 @@ function Home() {
     <StyleRoot>
       <div style={styles.fadeIn}>
         <div className="home">
-          <img />
+          <Navigation />
           <div className="introduction">
             <h1 className="introductionText">
               I<span className="dot">'</span>m

@@ -1,9 +1,6 @@
 .professional {
     font-family: 'Montserrat','Roboto';
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
     background-image:
         linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
@@ -12,7 +9,11 @@
     background-size: cover;
     background-position: center;
 }
-
+.professionalWrapper{
+    display:flex;
+    padding: 10vw 30vw ;
+    
+}
 .professionalTitle{
     color:#DBB89A;
     position:absolute;

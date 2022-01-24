@@ -13,7 +13,6 @@ import Blog from "./Blog/Blog";
 function App() {
   return (
     <Router>
-      <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="Home" index element={<Home />} />

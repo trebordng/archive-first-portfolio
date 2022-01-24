@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navigation.css";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
@@ -39,7 +39,6 @@ function Navigation() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Outlet />
     </>
   );
 }

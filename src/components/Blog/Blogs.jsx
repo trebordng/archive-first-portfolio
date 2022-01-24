@@ -12,30 +12,25 @@ const styles = {
 };
 function Blogs() {
   const [blogData, getBlogData] = useState([]);
-  function axiosAPI() {
-    axios
-      .get("https://61ed54c4f3011500174d23cc.mockapi.io/Post")
-      .then((res) => {
-        res.data.map((blog) => {
-          getBlogData([...blogData, blog]);
+
+  useEffect(() => {
+    axios.get("https://61ed54c4f3011500174d23cc.mockapi.io/Post")
+      .then((response) => {
+        (response.data).map((blog) => {
+          getBlogData([...blogData, { title: blog["title"], id: blog["id"] }]);
         });
-        console.log(blogData);
       })
+
       .catch((err) => {
         console.log(err);
       });
-  }
-  useEffect(() => {
-    axiosAPI();
+    console.log(blogData);
   }, []);
+
   return (
     <StyleRoot>
       <div style={styles.fadeIn}>
-        <div className="blog">
-          {blogData.map((blog) => {
-            <p>{blog.title}</p>;
-          })}
-        </div>
+        <div className="blog"></div>
       </div>
     </StyleRoot>
   );
