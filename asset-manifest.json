@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.717aae53.css",
-    "main.js": "/portfolio/static/js/main.e3c2af09.js",
+    "main.css": "/portfolio/static/css/main.ac57e7f6.css",
+    "main.js": "/portfolio/static/js/main.860fe17a.js",
     "static/media/c2.png": "/portfolio/static/media/c2.6b4aa27ec523dcb274f4.png",
     "static/media/tranfood1.png": "/portfolio/static/media/tranfood1.822de4ffd6ba51a33a31.png",
     "static/media/3.png": "/portfolio/static/media/3.28be9dbaf12076b5717e.png",
     "static/media/rethink2.png": "/portfolio/static/media/rethink2.c65cac45878ccf39f3a6.png",
-    "static/media/experience.jpg": "/portfolio/static/media/experience.846e7262d9e078732872.jpg",
+    "static/media/education.jpg": "/portfolio/static/media/education.ad2195ffbd36363934e3.jpg",
     "static/media/tranfood3.png": "/portfolio/static/media/tranfood3.fc57362f25a118fae9ef.png",
-    "static/media/education.jpg": "/portfolio/static/media/education.0b7c6a7baacdcc1b7f5e.jpg",
+    "static/media/blog.jpg": "/portfolio/static/media/blog.7bf55f5f228f29996e10.jpg",
     "static/media/1.png": "/portfolio/static/media/1.8c981c45b8982fd1fe4c.png",
-    "static/media/continue.jpg": "/portfolio/static/media/continue.b5ad7e8e2414f2b22a18.jpg",
     "static/media/2.png": "/portfolio/static/media/2.ae37674bd06a4c40efe3.png",
     "static/media/portrait.jpg": "/portfolio/static/media/portrait.918e1dd6e484448fd8e2.jpg",
     "static/media/rethink3.png": "/portfolio/static/media/rethink3.f68ac238878e84f6c894.png",
@@ -21,11 +20,11 @@
     "static/media/c3.png": "/portfolio/static/media/c3.dafe9a50b6225c586455.png",
     "static/media/c1.png": "/portfolio/static/media/c1.f6c2733828093baec3d9.png",
     "index.html": "/portfolio/index.html",
-    "main.717aae53.css.map": "/portfolio/static/css/main.717aae53.css.map",
-    "main.e3c2af09.js.map": "/portfolio/static/js/main.e3c2af09.js.map"
+    "main.ac57e7f6.css.map": "/portfolio/static/css/main.ac57e7f6.css.map",
+    "main.860fe17a.js.map": "/portfolio/static/js/main.860fe17a.js.map"
   },
   "entrypoints": [
-    "static/css/main.717aae53.css",
-    "static/js/main.e3c2af09.js"
+    "static/css/main.ac57e7f6.css",
+    "static/js/main.860fe17a.js"
   ]
 }
