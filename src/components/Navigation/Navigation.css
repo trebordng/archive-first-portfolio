@@ -21,7 +21,14 @@
     text-decoration: none;
 }
 
+active {
+    color: white !important;
+}
 
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: white !important;
+}
 
 .navbar-expand .navbar-nav .nav-link {
     padding-right: 1rem;
@@ -53,7 +60,7 @@
 
 .navbar-toggler:focus {
     border-color: #DBB89A !important;
-    box-shadow: none!important;
+    box-shadow: none !important;
 }
 
 .footer {
@@ -106,11 +113,11 @@
     }
 
 }
+
 @media screen and (max-height: 500px) {
     .nav-link {
-        padding:10px;
-        font-size:20px;
+        padding: 10px;
+        font-size: 20px;
         max-height: 50px;
     }
 }
-

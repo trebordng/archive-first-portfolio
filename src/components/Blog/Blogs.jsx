@@ -36,9 +36,9 @@ function Blogs() {
           <div className="blogs">
             <Navigation />
 
-            <h1 className="blogsTitle">Blog</h1>
-
             <div className="blogWrapper row">
+              <div className="blogsTitle">Blog</div>
+
               {blogData.map((blogPage) =>
                 blogPage.map((blog) => (
                   <div className="blog col-lg-4">

@@ -18,8 +18,10 @@ function Portfolios() {
       <div style={styles.fadeIn}>
         <div className="portfolios">
           <Navigation />
-          <h1 className="portfoliosTitle">Portfolio</h1>
+
           <div className="portfolioWrapper">
+            <div className="portfoliosTitle">Portfolio</div>
+
             <div className="container ">
               <div className="row">
                 <div className="separateLine col-lg-2 col-sm-12">

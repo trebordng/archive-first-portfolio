@@ -1,7 +1,6 @@
 .home {
     font-family: 'Spectral', 'Roboto';
     position: relative;
-    min-height: 110vh;
     background-image:
         linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
         url('./portrait.jpg');
@@ -14,6 +13,7 @@
 
 .introduction {
     padding: 15vw 30vw 10vw 30vw;
+    min-height: 100vh;
 }
 
 .introductionText {
@@ -109,7 +109,8 @@
 
 @media screen and (max-width: 768px) {
     .introduction {
-        padding: 15vw 10vw 10vw 10vw;
+        padding: 25vw 10vw 10vw 10vw;
+        min-height: 70vh;
     }
 
     .professionalWrapper {
@@ -117,21 +118,21 @@
     }
 
     .introductionText {
-        font-size: 60px;
+        font-size: 80px;
     }
 
     .introductionSubText {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .moreButton {
-        font-size: 10px;
+        font-size: 15px;
         width: 75px;
     }
 
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 470px) and (max-width: 768px) {
     .introductionText {
         font-size: 100px;
     }
@@ -155,6 +156,7 @@
 @media screen and (min-width:768px) and (max-width: 992px) {
     .introduction {
         padding: 15vw 20vw 10vw 20vw;
+        min-height: 80vh;
     }
 
 }

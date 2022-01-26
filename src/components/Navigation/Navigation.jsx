@@ -7,34 +7,40 @@ import { Button, Offcanvas, Dropdown } from "react-bootstrap";
 function Navigation() {
   return (
     <>
-      <Navbar expand="lg" >
+      <Navbar collapseOnSelect={"true"} expand="lg">
         <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            data-toggle="collapse"
+            data-target="responsive-navbar-nav"
+            aria-controls="responsive-navbar-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          />
           <Navbar.Brand>
             <Link to="/Home#homeLink">#robertTran</Link>
           </Navbar.Brand>
 
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link bsStyle="primary">
+              <Nav.Link eventKey="2">
                 <Link to="/Home#homeLink">Home</Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link eventKey="2">
                 <Link to="/Home#professionalLink">Professional</Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link eventKey="2">
                 <Link to="/Home#educationAndExperienceLink">
                   Education & Experience
                 </Link>
               </Nav.Link>
-              <Nav.Link >
+              <Nav.Link eventKey="2">
                 <Link to="/Home#contactLink">Contact</Link>
               </Nav.Link>
-              <Nav.Link >
+              <Nav.Link eventKey="2">
                 <Link to="/Portfolios">Portfolio</Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link eventKey="2">
                 <Link to="/Blogs#blogLink">Blog</Link>
               </Nav.Link>
             </Nav>

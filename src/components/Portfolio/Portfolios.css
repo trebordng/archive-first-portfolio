@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 18vw 2vw;
+    padding: 10vw 2vw;
 }
 
 .portfolio {
@@ -17,17 +17,13 @@
 
 }
 
-.portfolioWrapper {
-    display: flex;
-    
-}
+
 
 .portfoliosTitle {
+    text-align: center;
     color: #DBB89A;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-bottom: 5%;
+    font-size: 40px;
 }
 
 .portfolioImage {
@@ -68,7 +64,7 @@
        
     }
     .portfolios{
-        padding:40vw 4vw;
+        padding:10vw 4vw;
     }
 
     .portfoliosTitle {
@@ -90,7 +86,7 @@
        
     }
     .portfolios{
-        padding:25vw 4vw;
+        padding:10vw 4vw;
     }
 
     .portfoliosTitle {
@@ -111,7 +107,7 @@
 
     .portfolios{
 
-        padding:22vw 4vw;
+        padding:10vw 4vw;
     }
 
     .portfoliosTitle {
