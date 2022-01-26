@@ -1,0 +1,102 @@
+.leftContact{
+    background-color: rgba(50, 65, 88,1);
+    color:#DBB89A;
+    text-align: right;
+    padding:5vw;
+    font-family: 'Spectral', 'Roboto';
+}
+.rightContact{
+    font-family: 'Spectral', 'Roboto';  
+    background-color: white;
+    color:white;
+    padding:5vw;
+}
+
+
+.subjectBoxHeight{
+    height:30px;
+}
+.boxWidth{
+    padding:4px;
+    border-color: black;
+    border-radius: 4px;
+    width:100%;
+    outline:none;
+
+}
+
+.emailName{
+    padding-bottom:10px;
+}
+.boxHeight{
+    height: 80px;
+}
+.sendButton {
+    border-radius: 4px;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    background-color: transparent;
+    font-size: 2vh;
+    width: 10vh;
+    font-weight: 300;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-width: thin;
+}
+
+.sendButton:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sendButton:focus {
+    outline: none;
+}
+
+.sendButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.sendButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.sendButton:hover span {
+    padding-right: 12px;
+}
+
+.sendButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 992px) {
+
+
+    .leftContact{
+        text-align: left;
+        font-size: 18px;
+        padding:10vw;
+    }
+    .rightContact{
+        padding:10vw;
+        font-size:20px;
+    }
+    .boxWidth{
+        height: 30px;
+    }
+    .boxHeight{
+        height:100px;
+    }
+    .nameBox{
+        padding-bottom:10px;
+    }
+}

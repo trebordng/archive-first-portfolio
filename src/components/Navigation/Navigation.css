@@ -1,7 +1,13 @@
 .navbar{
-    font-family: 'Montserrat','Roboto';
+    font-family: 'Spectral', 'Roboto';
     font-weight: 500;
     padding-top:2%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
 }
 .navbar a{
     color:#DBB89A;
@@ -10,6 +16,7 @@
 }
 a:hover{
     color:white;
+    
     text-decoration: none;
 }
 a:focus{
@@ -26,7 +33,59 @@ a:focus{
 }
 .navbar-toggler{
     
-    border-radius: 8px;
-    border-color: #DBB89A;
+     border-radius: 4px !important;
+     border-color: #DBB89A !important;
+     outline: none !important;
 }
- 
+.navbar-toggler:hover{
+   
+    
+    background-color: rgba(50, 65, 88, 0.9);
+}
+.navbar-toggler:focus{
+     border-color: #DBB89A !important;
+     -webkit-appearance: none;
+    outline:0;
+}
+
+.footer{
+   padding: 60px;
+    text-align: center;
+    font-family: 'Spectral', 'Roboto';
+}
+.backButton {
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #DBB89A;
+    color: #DBB89A;
+    background-color: transparent;
+    font-size: 2vh;
+    width: 15vh;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-width: thin;
+}
+
+.backButton:hover {
+    background-color: rgba(219, 184, 154, 0.2);
+}
+
+.backButton:focus {
+    outline: none;
+}
+.navbar-toggler-icon{
+    background-image: url("./toggler.png") !important;
+}
+@media screen and (max-width: 768px) {
+    .nav-link{
+        background-color:rgba(50, 65, 88, 0.82);
+        font-size:25px;
+        width:60%;
+        text-align: center;
+    }
+    .navbar{
+        top:10px;
+    }
+    
+   }

@@ -4,6 +4,10 @@ import Popup from "./Popup";
 import Radium, { StyleRoot } from "radium";
 import { fadeIn } from "react-animations";
 import Navigation from "../Navigation/Navigation";
+import Professional from "../Professional/Professional";
+import EducationAndExperience from "../Education/EducationAndExperience";
+import Contact from "../Contact/Contact";
+import Footer from "../Navigation/Footer";
 
 const styles = {
   fadeIn: {
@@ -17,8 +21,11 @@ function Home() {
   return (
     <StyleRoot>
       <div style={styles.fadeIn}>
-        <div className="home">
-          <Navigation />
+        <div className="home" id="homeLink">
+          <div className="stickyNav">
+            <Navigation />
+          </div>
+
           <div className="introduction">
             <h1 className="introductionText">
               I<span className="dot">'</span>m
@@ -28,7 +35,7 @@ function Home() {
             <div className="buttonText">
               <div>
                 <h1 className="introductionSubText">UX/UI Designer & Web</h1>
-                <h1 className="introductionSubText">Developer</h1>|
+                <h1 className="introductionSubText">Developer</h1>
               </div>
               <div>
                 <button
@@ -55,6 +62,16 @@ function Home() {
               </div>
             </div>
           </div>
+          <div id="professionalLink">
+            <Professional />
+          </div>
+          <div id="educationAndExperienceLink">
+            <EducationAndExperience />
+          </div>
+          <div id="contactLink">
+            <Contact />
+          </div>
+          <Footer />
         </div>
       </div>
     </StyleRoot>

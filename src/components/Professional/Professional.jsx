@@ -14,7 +14,7 @@ function Professional() {
     <StyleRoot>
       <div style={styles.fadeIn}>
         <div className="professional">
-          <Navigation />
+         
           <h1 className="professionalTitle">Professional</h1>
           <div className="professionalWrapper">
             <div>

@@ -1,0 +1,107 @@
+.education {
+    font-family: 'Spectral', 'Roboto';
+    position: relative;
+    background-image:
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
+        url("./education.jpg");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+
+.eEText {
+    padding-top: 3%;
+    text-align: center;
+}
+
+
+
+
+.rightEducation {
+    border: 1px solid white;
+
+}
+
+.educationAndExperienceWrapper {
+
+    padding: 15vw 20vw 5vw 20vw;
+}
+
+.educationTitle {
+    width: 100%;
+    text-align: center;
+    color: #DBB89A;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.year {
+    color: #DBB89A;
+    font-weight: bolder;
+}
+
+.school {
+    color: white;
+}
+
+.program {
+    color: #DBB89A;
+}
+
+
+
+.experienceWrapper {
+    border-left: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .educationTitle{
+        top:8%;
+    }
+    .educationAndExperienceWrapper {
+
+        padding: 55vw 10vw 10vw 10vw;
+    }
+    .experienceWrapper{
+        border-left:none;
+        border-top:1px solid white;
+    }
+    .program{
+        font-size:15px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .educationTitle{
+        top:10%;
+    }
+
+    .educationAndExperienceWrapper {
+
+        padding: 35vw 10vw 10vw 10vw;
+    }
+}
+@media screen and (max-width: 992px) {
+
+
+    .educationAndExperienceWrapper {
+
+        padding: 28vw 10vw 10vw 10vw;
+    }
+    .experienceWrapper{
+        border-left:none;
+        border-top:1px solid white;
+    }
+    .program{
+        font-size:15px;
+    }
+}

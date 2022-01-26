@@ -3,7 +3,8 @@ import axios from "axios";
 import Radium, { StyleRoot } from "radium";
 import { fadeIn } from "react-animations";
 import { Link, Outlet } from "react-router-dom";
-
+import Navigation from "../Navigation/Navigation";
+import "./Blogs.css";
 const styles = {
   fadeIn: {
     animation: "x 1s",
@@ -31,19 +32,28 @@ function Blogs() {
   return (
     <StyleRoot>
       <div style={styles.fadeIn}>
-        <div className="blog">
-          {blogData.map((blogPage) =>
-            blogPage.map((blog) => (
-              <Link to={`/Blogs/${blog.id}`} key={blog.id}>
-                <div>
-                  <p>{blog.title}</p>
-                </div>
-              </Link>
-            ))
-          )}
-          <div>
-            <Outlet />
+        <div className="blogs">
+          <Navigation />
+          <div id="blogLink">
+            <h1 className="blogsTitle">Blog</h1>
           </div>
+          <div className="blogWrapper row">
+            {blogData.map((blogPage) =>
+              blogPage.map((blog) => (
+                <div className="blog col-lg-4">
+                  <h2>{blog.title}</h2>
+                  <img className="blogImage" src={blog.image} />
+                  <p>{blog.shortDescription}</p>
+                  <Link to={`/Blogs/${blog.id}`} key={blog.id}>
+                    <button className="readMoreButton">
+                      <span>Read More</span>
+                    </button>
+                  </Link>
+                </div>
+              ))
+            )}
+          </div>
+          <div></div>
         </div>
       </div>
     </StyleRoot>

@@ -1,5 +1,5 @@
 .portfolios {
-    font-family: 'Montserrat', 'Roboto';
+    font-family: 'Lato', 'Roboto';
     position: relative;
     min-height: 100vh;
     background-image:
@@ -8,15 +8,19 @@
     overflow: hidden;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
+
 .portfolio {
     color: white;
 
 }
-.portfolioWrapper{
+
+.portfolioWrapper {
     display: flex;
-    padding: 10vw 2vw;
+    padding: 18vw 2vw;
 }
+
 .portfoliosTitle {
     color: #DBB89A;
     position: absolute;
@@ -30,25 +34,76 @@
     height: 600px;
     object-fit: cover;
 }
-.portfolioListText p{
-    display:inline-block;
-    color: #DBB89A ;
+
+.portfolioListText p {
+    display: inline-block;
+    color: #DBB89A;
     text-decoration: none !important;
     font-weight: bold;
 }
-.portfolioListText p:hover{
-   
-    color: white ;
-    
+
+.portfolioListText p:hover {
+
+    color: white;
+
 }
-.portfolioListText p:focus{
-   
-    color: white ;
-    
+
+.portfolioListText p:focus {
+
+    color: white;
+
 }
+
 .separateLine {
 
 
 
     border-right: 1px solid #DBB89A;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolioWrapper {
+        text-align: center;
+        padding: 40vw 4vw;
+    }
+
+    .portfoliosTitle {
+        top: 7%;
+    }
+
+    .separateLine {
+        border-right: none;
+        border-bottom: 1px solid #DBB89A;
+    }
+
+    .portfolio {
+        padding-top: 15px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+   
+
+    .portfolioWrapper {
+        text-align: center;
+        padding:25vw 4vw;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 992px) {
+    .portfolioWrapper {
+        text-align: center;
+        padding: 22vw 4vw;
+    }
+
+    .portfoliosTitle {
+        top: 7%;
+    }
+
+    .separateLine {
+        border-right: none;
+        border-bottom: 1px solid #DBB89A;
+    }
+
+    .portfolio {
+        padding-top: 15px;
+    }
 }

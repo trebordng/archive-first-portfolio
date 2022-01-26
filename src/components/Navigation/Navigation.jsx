@@ -1,42 +1,47 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Navigation.css";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Button, Offcanvas, Dropdown } from "react-bootstrap";
 
 function Navigation() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand>
-            <Link to="/Home">#robertTran</Link>
-          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link>
-                <Link to="/Home">Home</Link>
+                <Link to="/Home#homeLink">Home</Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/Professional">Professional</Link>
+                <Link to="/Home#professionalLink">Professional</Link>
+              </Nav.Link>
+
+              <Nav.Link>
+                <Link to="/Home#educationAndExperienceLink">
+                  Education & Experience
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/Home#contactLink">Contact</Link>
               </Nav.Link>
               <Nav.Link>
                 <Link to="/Portfolios">Portfolio</Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/Education">Education</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/Experience">Experience</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/Contact">Contact</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/Blogs">Blog</Link>
+                <Link to="/Blogs#blogLink">Blog</Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
+          <Navbar.Brand>
+            <Link to="/Home#homeLink">#robertTran</Link>
+          </Navbar.Brand>
         </Container>
       </Navbar>
     </>

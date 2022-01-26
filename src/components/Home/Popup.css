@@ -8,9 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .innerPopup {
+    z-index: 1;
     border-radius: 4px;
     position: relative;
     padding: 40px;
