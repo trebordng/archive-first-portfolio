@@ -32,28 +32,30 @@ function Blogs() {
   return (
     <StyleRoot>
       <div style={styles.fadeIn}>
-        <div className="blogs">
-          <Navigation />
-          <div id="blogLink">
+        <div id="blogLink">
+          <div className="blogs">
+            <Navigation />
+
             <h1 className="blogsTitle">Blog</h1>
+
+            <div className="blogWrapper row">
+              {blogData.map((blogPage) =>
+                blogPage.map((blog) => (
+                  <div className="blog col-lg-4">
+                    <h2>{blog.title}</h2>
+                    <img className="blogImage" src={blog.image} />
+                    <p>{blog.shortDescription}</p>
+                    <Link to={`/Blogs/${blog.id}`} key={blog.id}>
+                      <button className="readMoreButton">
+                        <span>Read More</span>
+                      </button>
+                    </Link>
+                  </div>
+                ))
+              )}
+            </div>
+            <div></div>
           </div>
-          <div className="blogWrapper row">
-            {blogData.map((blogPage) =>
-              blogPage.map((blog) => (
-                <div className="blog col-lg-4">
-                  <h2>{blog.title}</h2>
-                  <img className="blogImage" src={blog.image} />
-                  <p>{blog.shortDescription}</p>
-                  <Link to={`/Blogs/${blog.id}`} key={blog.id}>
-                    <button className="readMoreButton">
-                      <span>Read More</span>
-                    </button>
-                  </Link>
-                </div>
-              ))
-            )}
-          </div>
-          <div></div>
         </div>
       </div>
     </StyleRoot>

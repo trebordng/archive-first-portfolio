@@ -9,6 +9,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding: 18vw 2vw;
 }
 
 .portfolio {
@@ -18,7 +19,7 @@
 
 .portfolioWrapper {
     display: flex;
-    padding: 18vw 2vw;
+    
 }
 
 .portfoliosTitle {
@@ -64,7 +65,10 @@
 @media screen and (max-width: 768px) {
     .portfolioWrapper {
         text-align: center;
-        padding: 40vw 4vw;
+       
+    }
+    .portfolios{
+        padding:30vw 4vw;
     }
 
     .portfoliosTitle {
@@ -80,18 +84,11 @@
         padding-top: 15px;
     }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
-   
-
-    .portfolioWrapper {
-        text-align: center;
-        padding:25vw 4vw;
-    }
-}
 @media screen and (min-width:768px) and (max-width: 992px) {
-    .portfolioWrapper {
-        text-align: center;
-        padding: 22vw 4vw;
+
+    .portfolios{
+
+        padding:22vw 4vw;
     }
 
     .portfoliosTitle {
@@ -100,6 +97,7 @@
 
     .separateLine {
         border-right: none;
+        text-align: center;
         border-bottom: 1px solid #DBB89A;
     }
 

@@ -1,66 +1,75 @@
-.navbar{
+.navbar {
     font-family: 'Spectral', 'Roboto';
     font-weight: 500;
-    padding-top:2%;
-    z-index: 1;
+    padding-top: 2%;
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     font-size: 20px;
 }
-.navbar a{
-    color:#DBB89A;
-    padding-right:1rem;
+
+.navbar a {
+    color: #DBB89A;
+    padding-right: 1rem;
     text-decoration: none;
-}
-a:hover{
-    color:white;
-    
-    text-decoration: none;
-}
-a:focus{
-    color:white;
-}
-.navbar-expand .navbar-nav .nav-link{
-    padding-right:1rem;
-    padding-left:1rem;
-    font-size: 2vh;
 }
 
-.navbar-collapse{
+.navbar a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 20px;
+
+}
+
+.navbar-toggler :focus {
+    box-shadow: none !important;
+}
+
+.navbar-collapse {
     flex-grow: 0;
 }
-.navbar-toggler{
-    
-     border-radius: 4px !important;
-     border-color: #DBB89A !important;
-     outline: none !important;
-}
-.navbar-toggler:hover{
-   
-    
-    background-color: rgba(50, 65, 88, 0.9);
-}
-.navbar-toggler:focus{
-     border-color: #DBB89A !important;
-     -webkit-appearance: none;
-    outline:0;
+
+.navbar-toggler {
+
+    border-radius: 4px !important;
+    border-color: #DBB89A !important;
+    outline: none !important;
 }
 
-.footer{
-   padding: 60px;
+.navbar-toggler:hover {
+
+
+    background-color: rgba(50, 65, 88, 0.9);
+}
+
+.navbar-toggler:focus {
+    border-color: #DBB89A !important;
+    box-shadow: none!important;
+}
+
+.footer {
+    padding: 60px;
     text-align: center;
     font-family: 'Spectral', 'Roboto';
 }
+
 .backButton {
     border-radius: 4px;
     border-style: solid;
     border-color: #DBB89A;
     color: #DBB89A;
     background-color: transparent;
-    font-size: 2vh;
-    width: 15vh;
+    font-size: 20px;
+    width: 150px;
     font-weight: 600;
     transition: all 0.5s;
     cursor: pointer;
@@ -74,18 +83,27 @@ a:focus{
 .backButton:focus {
     outline: none;
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
     background-image: url("./toggler.png") !important;
 }
-@media screen and (max-width: 768px) {
-    .nav-link{
-        background-color:rgba(50, 65, 88, 0.82);
-        font-size:25px;
-        width:60%;
-        text-align: center;
+
+@media screen and (max-width: 992px) {
+    .nav-link {
+        background-color: rgba(50, 65, 88, 0.82);
+        padding: 20px;
+        font-size: 25px;
+        max-width: 100%;
+        text-align: left;
     }
-    .navbar{
-        top:10px;
+
+    .navbar {
+        top: 10px;
     }
-    
-   }
+
+    .nav-link a {
+        padding: 20px;
+    }
+
+}
+

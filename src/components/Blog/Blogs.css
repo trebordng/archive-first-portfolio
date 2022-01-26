@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: 30% 30% ;
     background-attachment: fixed;
+    padding: 15vw 20vw;
 }
 .blogsTitle {
     color: #DBB89A;
@@ -19,9 +20,7 @@
     transform: translate(-50%, -50%);
 }
 
-.blogWrapper{
-    padding: 15vw 20vw;
-}
+
 .blog{
     background-color: rgba(50, 65, 88,0.5);
     padding-top:3%;
@@ -67,6 +66,7 @@
 @media screen and (max-width: 768px) {
     .blogs{
         min-height: 300vw;
+        padding:25vw 20vw;
     }
     .blog{
         min-height: 90vw;
@@ -74,13 +74,11 @@
     .blogsTitle{
         top:15vw;
     }
-    .blogWrapper{
-        padding:25vw 20vw;
-    }
-  }
+}
   @media screen and (min-width:768px) and (max-width: 992px) {
     .blogs{
         min-height: 300vw;
+        padding:25vw 20vw;
     }
     .blog{
         min-height: 85vw;
@@ -88,16 +86,14 @@
     .blogsTitle{
         top:15vw;
     }
-    .blogWrapper{
-        padding:25vw 20vw;
-    }
+    
   }
   @media screen and (min-width:992px) and (max-width: 1500px) {
     
     .blog{
         min-height: 43vw;
     }
-    .blogWrapper{
+    .blogs{
         padding:20vw 10vw;
     }
   }

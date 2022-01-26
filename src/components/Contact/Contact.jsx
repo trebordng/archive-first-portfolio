@@ -41,13 +41,13 @@ function Contact() {
             <div className="col-lg-6 leftContact">
               <h2>CONTACT</h2>
               <p>
-                <strong>Phone</strong> 0451129979
+                <strong>Phone:</strong> 0451129979
               </p>
               <p>
-                <strong>Email</strong> rtran.nvtt@gmail.com
+                <strong>Email:</strong> rtran.nvtt@gmail.com
               </p>
               <p>
-                <strong>LinkedIn</strong> linkedin.com/in/robert-tran-a49b251a4
+                <strong>LinkedIn:</strong> linkedin.com/in/robert-tran-a49b251a4
               </p>
             </div>
             <div className="col-lg-6 rightContact">
@@ -60,8 +60,8 @@ function Contact() {
                     <input className="boxWidth" type="email" name="user_email" placeholder="Email" required/>
                   </div>
                 </div>
-                <div>
-                  <textarea
+                <div className="subjectBox">
+                  <input
                     className="boxWidth subjectBoxHeight"
                     name="subject"
                     placeholder="Subject"

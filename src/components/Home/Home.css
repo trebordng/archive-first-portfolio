@@ -8,8 +8,7 @@
     background-size: cover;
     background-position: 30% 30%;
     background-attachment: fixed;
-    font-size:1vw;
-    overflow:hidden ;
+    overflow: hidden;
 }
 
 
@@ -20,7 +19,7 @@
 .introductionText {
     text-align: left;
     color: #DBB89A;
-    font-size: 10vh;
+    font-size: 100px;
     font-weight: 500;
 
 
@@ -34,13 +33,13 @@
     text-align: left;
     color: #DBB89A;
     font-weight: lighter;
-    font-size: 2vh;
+    font-size: 20px;
 }
 
 .buttonText {
     display: flex;
     justify-content: space-between;
-   
+
 }
 
 .moreButton {
@@ -49,8 +48,8 @@
     border-color: #DBB89A;
     color: #DBB89A;
     background-color: transparent;
-    font-size: 2vh;
-    width: 15vh;
+    font-size: 20px;
+    width: 150px;
     font-weight: 600;
     transition: all 0.5s;
     cursor: pointer;
@@ -109,24 +108,55 @@
 
 
 @media screen and (max-width: 768px) {
-    .introduction{
+    .introduction {
         padding: 15vw 10vw 10vw 10vw;
     }
-    .professionalWrapper{
-        padding: 15vw 10vw 10vw 10vw;
-    }
-    
-   }
-   @media screen and (min-width: 480px) and (max-width: 768px) {
-   
 
-    .professionalWrapper{
+    .professionalWrapper {
+        padding: 15vw 10vw 10vw 10vw;
+    }
+
+    .introductionText {
+        font-size: 70px;
+    }
+
+    .introductionSubText {
+        font-size: 10px;
+    }
+
+    .moreButton {
+        font-size: 10px;
+        width: 75px;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .introductionText {
+        font-size: 100px;
+    }
+
+    .introductionSubText {
+        font-size: 20px;
+    }
+
+    .moreButton {
+        font-size: 20px;
+        width: 150px;
+    }
+    .skills{
+        width:500px;
+    }
+
+
+    .professionalWrapper {
         padding: 15vw 20vw 10vw 20vw;
     }
 }
-   @media screen and (min-width:768px) and (max-width: 992px) {
-    .introduction{
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+    .introduction {
         padding: 15vw 20vw 10vw 20vw;
     }
-    
-   }
+
+}
