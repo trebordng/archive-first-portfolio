@@ -62,13 +62,13 @@
     border-right: 1px solid #DBB89A;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:500px) {
     .portfolioWrapper {
         text-align: center;
        
     }
     .portfolios{
-        padding:30vw 4vw;
+        padding:40vw 4vw;
     }
 
     .portfoliosTitle {
@@ -83,6 +83,29 @@
     .portfolio {
         padding-top: 15px;
     }
+}
+@media screen and (min-width:500px) and (max-width: 768px) {
+    .portfolioWrapper {
+        text-align: center;
+       
+    }
+    .portfolios{
+        padding:25vw 4vw;
+    }
+
+    .portfoliosTitle {
+        top: 7%;
+    }
+
+    .separateLine {
+        border-right: none;
+        border-bottom: 1px solid #DBB89A;
+    }
+
+    .portfolio {
+        padding-top: 15px;
+    }
+
 }
 @media screen and (min-width:768px) and (max-width: 992px) {
 
