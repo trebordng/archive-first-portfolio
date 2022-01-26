@@ -38,7 +38,7 @@ function Navigation() {
                 <Link to="/Home#contactLink">Contact</Link>
               </Nav.Link>
               <Nav.Link eventKey="2">
-                <Link to="/Portfolios">Portfolio</Link>
+                <Link to="/Portfolios/1">Portfolio</Link>
               </Nav.Link>
               <Nav.Link eventKey="2">
                 <Link to="/Blogs#blogLink">Blog</Link>

@@ -8,6 +8,7 @@ import Professional from "../Professional/Professional";
 import EducationAndExperience from "../Education/EducationAndExperience";
 import Contact from "../Contact/Contact";
 import Footer from "../Navigation/Footer";
+import Reveal from 'react-reveal/Reveal';
 
 const styles = {
   fadeIn: {
@@ -62,9 +63,11 @@ function Home() {
               </div>
             </div>
           </div>
+          <Reveal>
           <div id="professionalLink">
             <Professional />
           </div>
+          
           <div id="educationAndExperienceLink">
             <EducationAndExperience />
           </div>
@@ -72,6 +75,7 @@ function Home() {
             <Contact />
           </div>
           <Footer />
+          </Reveal>
         </div>
       </div>
     </StyleRoot>
