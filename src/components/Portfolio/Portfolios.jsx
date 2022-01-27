@@ -16,6 +16,7 @@ function Portfolios() {
   return (
     <StyleRoot>
       <div style={styles.fadeIn}>
+      
         <div className="portfolios">
           <Navigation />
 
@@ -39,6 +40,7 @@ function Portfolios() {
               </div>
             </div>
           </div>
+        
         </div>
       </div>
     </StyleRoot>

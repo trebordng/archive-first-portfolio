@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Navigation.css";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Button, Offcanvas, Dropdown } from "react-bootstrap";
 
 function Navigation() {
   return (
     <>
-      <Navbar collapseOnSelect={"true"} expand="lg">
+      <Navbar defaultActiveKey="Home" collapseOnSelect={"true"} expand="lg">
         <Container>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -23,30 +22,33 @@ function Navigation() {
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link eventKey="2">
-                <Link to="/Home#homeLink">Home</Link>
+              <Nav.Link eventKey="Home">
+                <Link to="/Home#homeLink" class="target">
+                  Home
+                </Link>
               </Nav.Link>
-              <Nav.Link eventKey="2">
+              <Nav.Link eventKey="Professional">
                 <Link to="/Home#professionalLink">Professional</Link>
               </Nav.Link>
-              <Nav.Link eventKey="2">
+              <Nav.Link eventKey="EducationAndExperience">
                 <Link to="/Home#educationAndExperienceLink">
                   Education & Experience
                 </Link>
               </Nav.Link>
-              <Nav.Link eventKey="2">
+              <Nav.Link eventKey="Contact">
                 <Link to="/Home#contactLink">Contact</Link>
               </Nav.Link>
-              <Nav.Link eventKey="2">
-                <Link to="/Portfolios/1">Portfolio</Link>
+              <Nav.Link eventKey="Portfolio">
+                <Link to="/Portfolios">Portfolio</Link>
               </Nav.Link>
-              <Nav.Link eventKey="2">
+              <Nav.Link eventKey="Blog">
                 <Link to="/Blogs#blogLink">Blog</Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      
     </>
   );
 }

@@ -5,7 +5,7 @@ import Portfolios from "./Portfolio/Portfolios";
 import Portfolio from "./Portfolio/Portfolio";
 import Blogs from "./Blog/Blogs";
 import Blog from "./Blog/Blog";
-import Contact from "./Contact/Contact";
+
 
 function App() {
   return (
@@ -18,7 +18,6 @@ function App() {
         </Route>
         <Route path="/Blogs" element={<Blogs />} />
         <Route path="/Blogs/:blogId" element={<Blog />} />
-        <Route path="/Contact" element={<Contact/>} />
       </Routes>
     </Router>
   );
