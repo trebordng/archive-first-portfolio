@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 import { getPortfolios } from "./PortfolioData";
 import "./Portfolios.css";
 import Radium, { StyleRoot } from "radium";
@@ -13,6 +13,7 @@ const styles = {
 };
 function Portfolios() {
   let portfolios = getPortfolios();
+  let params=window.location.href;
   return (
     <StyleRoot>
       <div style={styles.fadeIn}>
@@ -27,9 +28,9 @@ function Portfolios() {
               <div className="row">
                 <div className="separateLine col-lg-2 col-sm-12">
                   {portfolios.map((portfolio) => (
-                    <Link to={`/Portfolios/${portfolio.id}`} key={portfolio.id}>
+                    <Link to={`/Portfolios/${portfolio.id}`} key={portfolio.id} >
                       <div className="portfolioListText">
-                        <p>{portfolio.name}</p>
+                        <p className="activePortfolio">{portfolio.name}</p>
                       </div>
                     </Link>
                   ))}

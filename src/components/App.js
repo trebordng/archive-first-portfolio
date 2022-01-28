@@ -6,8 +6,9 @@ import Portfolio from "./Portfolio/Portfolio";
 import Blogs from "./Blog/Blogs";
 import Blog from "./Blog/Blog";
 
-
 function App() {
+  
+  
   return (
     <Router>
       <Routes>

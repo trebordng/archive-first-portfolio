@@ -2,6 +2,7 @@
     font-family: 'Spectral', 'Roboto';
     font-weight: 500;
     padding-top: 2%;
+    padding-bottom:2%;
     z-index: 2;
     position: fixed;
     top: 0;
@@ -11,15 +12,31 @@
 }
 
 
-.navbar a { 
+.scrollNav{
+    background: rgba(50,65,88,0.9) ;
+}
+
+.active{
+    color: white !important;
+    padding-right: 1rem;
+    text-decoration: none;
+    text-decoration: none;
+    text-align: center;
+}
+.inactive{
     color: #DBB89A;
     padding-right: 1rem;
     text-decoration: none;
+
+ 
 }
 
+.navbar .nav-link a:focus, .navbar .navbar-brand a:focus{
+    color: wheat;
+    text-decoration: none;
+}
 
-
-.navbar a:hover {
+.navbar .nav-link a:hover, .navbar .navbar-brand a:hover{
     color: white;
     text-decoration: none;
 }

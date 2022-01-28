@@ -9,6 +9,7 @@ import EducationAndExperience from "../Education/EducationAndExperience";
 import Contact from "../Contact/Contact";
 import Footer from "../Navigation/Footer";
 import Reveal from 'react-reveal/Reveal';
+import { useParams } from 'react-router-dom';
 
 const styles = {
   fadeIn: {
@@ -18,7 +19,8 @@ const styles = {
 };
 function Home() {
   const [buttonPopup, setButtonPopup] = useState(false);
-
+  let params= useParams();
+  console.log(params);
   return (
     <StyleRoot>
       <div style={styles.fadeIn}>

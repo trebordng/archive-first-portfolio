@@ -57,6 +57,9 @@
 
     border-right: 1px solid #DBB89A;
 }
+.activePortfolio:visited{
+    color: white !important;
+}
 
 @media screen and (max-width:500px) {
     .portfolioWrapper {
