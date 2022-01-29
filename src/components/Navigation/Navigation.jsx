@@ -11,6 +11,7 @@ function Navigation() {
   let params=window.location.href;
   const changeBackground = () =>{
 if (window.scrollY >=80){
+  
   setNavbar(true);
 }else{
   setNavbar(false);

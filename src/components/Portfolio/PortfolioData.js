@@ -26,7 +26,7 @@ let portfolios = [
     time: "February 2021 - March 2021.",
   },
   {
-    name: "Self Portfolio",
+    name: "React Project: Portfolio",
     id: 3,
     subtitle:
       "I want to make myself a portfolio website so it will fit best to what I am looking for.",
@@ -35,7 +35,7 @@ let portfolios = [
     image1: require("./selfportfolio/1.png"),
     image2: require("./selfportfolio/2.png"),
     image3: require("./selfportfolio/3.png"),
-    company: "Self",
+    company: "Self Portfolio",
     time: "January 2022 - January 2022.",
   },
   {

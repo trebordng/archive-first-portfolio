@@ -41,10 +41,12 @@ function Blogs() {
 
               {blogData.map((blogPage) =>
                 blogPage.map((blog) => (
-                  <div className="blog col-lg-4">
-                    <h2>{blog.title}</h2>
-                    <img className="blogImage" src={blog.image} />
-                    <p>{blog.shortDescription}</p>
+                  <div className="blog col-lg-4" style={{backgroundImage:`
+        linear-gradient(to bottom, rgba(50, 65, 88, 0.82), rgba(50, 65, 88, 0.52)),
+        url(${blog.image})`}}>
+                    <h2 className="blogTitle">{blog.title}</h2>
+                   
+
                     <Link to={`/Blogs/${blog.id}`} key={blog.id}>
                       <button className="readMoreButton">
                         <span>Read More</span>
